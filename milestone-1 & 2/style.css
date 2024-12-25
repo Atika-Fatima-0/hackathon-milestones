@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #333333;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto;
+  background-color: rgb(172, 167, 187);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.mainContent p {
+  width: 800px;
+}
+
+.sideBar {
+  width: 300px;
+  background-color: #c76f90;
+  color: white;
+  padding: 20px;
+  flex-shrink: 0;
+}
+
+.sideBar .profile {
+  text-align: center;
+}
+
+.sideBar .profile img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.sideBar h2 {
+  font-size: 1.5em;
+}
+
+.sideBar p {
+  margin-top: 5px;
+  font-size: 1em;
+}
+
+.sideBar h3 {
+  margin-top: 20px;
+  font-size: 1.2em;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+}
+
+.sideBar ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.sideBar ul li {
+  margin-bottom: 10px;
+}
+
+.mainContent {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.mainContent h3 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #c76f90;
+}
+
+.mainContent p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.mainContent ul {
+  list-style: none;
+}
+
+.mainContent ul li {
+  margin-bottom: 10px;
+}
+
+.mainContent ul li:before {
+  content: "•";
+  color: #c76f90;
+  margin-right: 10px;
+}
+
+#moreSkills {
+  display: none;
+}
+
+#toggleButton {
+  background-color: #c76f90;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+#toggleButton:hover {
+  background-color: #383b57;
+}
+
+@media (max-width: 768px) {
+  .mainContent p {
+    width: 90%;
+  }
+  .container {
+    flex-direction: column;
+  }
+
+  .sideBar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .mainContent {
+    width: 100%;
+  }
+
+  .mainContent h3 {
+    font-size: 1.2em;
+  }
+
+  .mainContent p {
+    font-size: 0.9em;
+  }
+
+  .sideBar h2 {
+    font-size: 1.3em;
+  }
+
+  .sideBar p,
+  .sideBar ul li {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .sideBar {
+    padding: 15px;
+  }
+
+  .mainContent {
+    padding: 15px;
+  }
+
+  .sideBar h2 {
+    font-size: 1.1em;
+  }
+
+  .sideBar p,
+  .sideBar ul li,
+  .mainContent p,
+  .mainContent ul li {
+    font-size: 0.85em;
+  }
+
+  .mainContent h3 {
+    font-size: 1.1em;
+  }
+
+}
+
+#picture {
+  width: 50%; /* or any specific width */
+  height: auto;
+  object-fit: contain; /* or cover, depending on your requirement */
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sideBar">
+        <div class="profile">
+          <img src="/images/doll.jpg" alt="Profile Picture" id="picture"/>
+          <h2>Atika Fatima</h2>
+          <p>AI Engineer</p>
+        </div>
+        <div class="contactInfo">
+          <h3>CONTACT INFO</h3>
+          <p><i class="fas fa-phone"></i> 03456798789</p>
+          <p><i class="fas fa-envelope"></i> abc@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> Address</p>
+          <p><i class="fas fa-calendar-alt"></i> Happy Resume</p>
+        </div>
+        <div class="education">
+          <h3>EDUCATION</h3>
+          <ul>
+            <li>2014 - 2016 - Pre primary</li>
+            <li>2016 - 2022 - primary</li>
+            <li>2022 - 2024 - bsek biek</li>
+          </ul>
+        </div>
+        <div class="languages">
+          <h3>LANGUAGES</h3>
+          <ul>
+            <li>Japanese</li>
+            <li>English</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mainContent">
+        <div class="about">
+          <h3>ABOUT</h3>
+          <p>
+            I am a passionate web developer with over a decade of experience in building dynamic and responsive websites. My journey in the tech industry started with an internship at IT Company Corp., where I honed my skills in web development. Over the years, I have worked with various companies, contributing to numerous projects and leading teams to success. I am proficient in multiple programming languages and frameworks, and I am always eager to learn and adapt to new technologies.
+          </p>
+        </div>
+        <div class="experiences">
+          <h3>EXPERIENCES</h3>
+          <ul>
+            <li>2010 Internship @ IT Company Corp.</li>
+            <li>2010 - 2012 Junior Web Developer @ IT Company Corp.</li>
+            <li>2012 - 2019 Full-stack Web Dev @ IT Solutions</li>
+            <li>2019 - 2024 Senior Web Developer @ Sample Industries</li>
+          </ul>
+        </div>
+        <div class="skills">
+          <h3>PROFESSIONAL SKILLS</h3>
+          <ul id="visibleSkills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+
+          <ul id="moreSkills" class="hiddenSkills">
+            <li>Next.js</li>
+            <li>React.js</li>
+            <li>TypeScript</li>
+          </ul>
+
+          <button id="toggleButton" class="toggleButton">More Skills</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

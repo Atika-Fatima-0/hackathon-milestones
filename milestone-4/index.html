@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Resume</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="resumeTemplate">
+        <h1 class="mainHeading">Welcome to Interactive Resume Builder</h1>
+        <h1 class="heading-primary">Resume Template</h1>
+        <img src="images/resume-template.png" alt="resume template" />
+      </div>
+      <div>
+        <h1 class="heading-primary">Generate Your Resume</h1>
+        <main class="container">
+          <section id="personal" class="section">
+            <h1 class="heading-secondary">Personal Details</h1>
+            <form action="" id="personalForm">
+              <div class="fieldBox">
+                <label for="fullName">Your name</label>
+                <input
+                  type="text"
+                  name="fullName"
+                  id="fullName"
+                  placeholder="Anna Barbie Girl"
+                />
+              </div>
+              <div class="fieldBox">
+                <label for="phone">Your phone</label>
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone"
+                />
+              </div>
+              <div class="fieldBox">
+                <label for="email">Your email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                />
+              </div>
+              <div class="fieldBox">
+                <label for="address">Your address</label>
+                <textarea
+                  name="address"
+                  id="address"
+                ></textarea>
+              </div>
+              <div>
+                <h4 id="social">Social Links</h4>
+                <div class="fieldBox">
+                  <label for="linkedin">LinkedIn</label>
+                  <input
+                    type="text"
+                    name="linkedin"
+                    id="linkedin"
+                  />
+                </div>
+                <div class="fieldBox">
+                  <label for="facebook">Facebook</label>
+                  <input
+                    type="text"
+                    name="facebook"
+                    id="facebook"
+                  />
+                </div>
+              </div>
+            </form>
+          </section>
+
+          <section id="professional" class="section">
+            <h1 class="heading-secondary">Professional Details</h1>
+            <form action="" id="professionalForm">
+              <div class="fieldBox">
+                <label for="Objective">Objective</label>
+                <textarea
+                  name="Objective"
+                  id="Objective"
+                ></textarea>
+              </div>
+              <div class="fieldBox">
+                <label for="currentJob">Current Job Title</label>
+                <input
+                  type="text"
+                  name="currentJob"
+                  id="currentJob"
+                />
+              </div>
+              <div class="fieldBox">
+                <label for="company">Company Name</label>
+                <input
+                  type="text"
+                  name="company"
+                  id="company"
+                />
+              </div>
+              <div class="fieldBox">
+                <label for="experience">Years of Experience</label>
+                <input
+                  type="number"
+                  name="experience"
+                  id="experience"
+                />
+              </div>
+              <div class="fieldBox">
+                <label for="skills">Skills</label>
+                <input
+                  name="skills"
+                  id="skills"
+                  required
+                />
+                <div id="additionalSkills"></div>
+                <div class="addSkillsBtns">
+                  <button type="button" id="addSkillBtn">Add Skill</button>
+                  <button type="button" id="removeSkillBtn">
+                    Remove Skill
+                  </button>
+                </div>
+              </div>
+              <div class="fieldBox">
+                <label for="education">Education</label>
+                <input
+                  type="text"
+                  name="education"
+                  id="education"
+                />
+              </div>
+              <div class="fieldBox">
+                <label for="certifications">Certifications</label>
+                <input
+                  type="text"
+                  name="certifications"
+                  id="certifications"
+                />
+              </div>
+            </form>
+          </section>
+        </main>
+
+        <button class="btn" id="btn">Generate</button>
+      </div>
+
+      <div id="output"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

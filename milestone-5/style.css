@@ -1,0 +1,452 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 120px;
+  gap: 20px;
+  text-transform: capitalize;
+  background-color: #000000;
+}
+
+.resumeTemplate {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.resumeTemplate img {
+  max-width: 70%;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.container {
+  max-width: 1050px;
+  margin: 20px auto;
+  background-color: #fffefe;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  border: 1px solid #d1d8e0;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  text-transform: capitalize;
+}
+
+.mainHeading {
+  color: white;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.container2 {
+  display: flex;
+  max-width: 1050px;
+  margin: 70px auto;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.section {
+  width: 50%;
+  padding: 20px;
+}
+
+.heading-primary {
+  margin: 22px 0;
+  text-align: center;
+  font-size: 43px;
+  font-weight: 700;
+  color: white;
+}
+
+.heading-secondary {
+  margin: 22px 0;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+}
+
+.heading-2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+}
+
+.fieldBox {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.fieldBox label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.fieldBox input,
+.fieldBox textarea {
+  font-size: 1rem;
+  padding: 12px 16px;
+  border-radius: 6px;
+  border: 1px solid black;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fieldBox input::placeholder,
+.fieldBox textarea::placeholder {
+  color: rgb(90, 89, 89);
+  opacity: 1;
+  transition: color 0.3s ease;
+}
+
+.fieldBox input:focus::placeholder,
+.fieldBox textarea:focus::placeholder {
+  color: rgb(90, 89, 89);
+}
+
+.btn,
+.addSkillsBtns button {
+  margin: 15px auto;
+  display: block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  background-color: #d8479c;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.btn:hover,
+.addSkillsBtns button:hover {
+  background-color: #db7dbc;
+}
+
+.addSkillsBtns {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.social a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.sideBar {
+  width: 300px;
+  background-color: #db7dbc;
+  color: white;
+  padding: 20px;
+  flex-shrink: 0;
+}
+
+.sideBar .profile {
+  text-align: center;
+}
+
+.sideBar .profile img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.sideBar h2 {
+  font-size: 1.5em;
+}
+
+.sideBar p {
+  margin-top: 5px;
+  font-size: 1em;
+}
+
+.sideBar h3 {
+  margin-top: 20px;
+  font-size: 1.2em;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+}
+
+.sideBar ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.sideBar ul li {
+  margin-bottom: 10px;
+}
+
+.mainContent {
+  width: calc(100% - 300px);
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.mainContent h3 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  color: #2b2d42;
+}
+
+.mainContent p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.mainContent ul {
+  list-style: none;
+}
+
+.mainContent ul li {
+  margin-bottom: 10px;
+}
+
+.mainContent ul li:before {
+  content: "•";
+  color: #2b2d42;
+  margin-right: 10px;
+}
+
+#toggleButton {
+  background-color: #2b2d42;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+#toggleButton:hover {
+  background-color: #383b57;
+}
+
+#moreSkills {
+  display: none;
+}
+
+.editable {
+  display: none;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.field p {
+  justify-items: center;
+  display: flex;
+  gap: 3px;
+}
+.field p a {
+  justify-items: center;
+  display: flex;
+  gap: 3px;
+}
+.para {
+  font-size: 1rem;
+}
+.field p span {
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.editBtn {
+  background-color: rgb(248, 66, 105);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.profile button {
+  margin: 5px auto;
+}
+.editBtn:hover {
+  background-color: #142636;
+}
+
+.doneBtn {
+  background-color: rgb(7, 118, 40);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  display: none;
+  margin-top: 5px;
+}
+
+.doneBtn:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+  }
+  .wrapper {
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+  }
+  .section {
+    width: 100%;
+  }
+  .fieldBox input,
+  .fieldBox textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainHeading {
+    font-size: 1.8rem;
+  }
+  .heading-primary {
+    font-size: 28px;
+  }
+  .btn {
+    width: 100%;
+  }
+  .resumeTemplate img {
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 2px;
+  }
+  .fieldBox label {
+    font-size: 1rem;
+  }
+  .fieldBox input,
+  .fieldBox textarea {
+    font-size: 0.9rem;
+  }
+  .btn,
+  .addSkillsBtns button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+  .addSkillsBtns {
+    display: block;
+  }
+  .mainContent p {
+    width: 90%;
+  }
+  .sideBar {
+    width: 100%;
+    text-align: center;
+  }
+  .mainContent {
+    width: 100%;
+  }
+  .mainContent h3 {
+    font-size: 1.2em;
+  }
+  .mainContent p {
+    font-size: 0.9em;
+  }
+  .sideBar h2 {
+    font-size: 1.3em;
+  }
+  .sideBar p,
+  .sideBar ul li {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainHeading {
+    font-size: 1.6rem;
+  }
+  .heading-primary {
+    font-size: 24px;
+  }
+  .btn {
+    width: 100%;
+  }
+  .sideBar {
+    padding: 15px;
+  }
+  .mainContent {
+    padding: 15px;
+  }
+  .sideBar h2 {
+    font-size: 1.1em;
+  }
+  .sideBar p,
+  .sideBar ul li,
+  .mainContent p,
+  .mainContent ul li {
+    font-size: 0.85em;
+  }
+  .mainContent h3 {
+    font-size: 1.1em;
+  }
+}
+
+#downloadPdfBtn {
+  margin: 20px auto;
+  display: block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2b2d42;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.url-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.shareable-url {
+  font-size: 18px;
+  color: white;
+}
+.shareable-url a {
+  color: #007bff;
+  text-decoration: none;
+}
+.shareable-url a:hover {
+  text-decoration: underline;
+}
